@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille de vidéos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .grid-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item"><video src="1.mp4" controls></video></div>
+        <div class="grid-item"><video src="2.mp4" controls></video></div>
+        <div class="grid-item"><video src="3.mp4" controls></video></div>
+        <div class="grid-item"><video src="4.mp4" controls></video></div>
+        <div class="grid-item"><video src="5.mp4" controls></video></div>
+        <div class="grid-item"><video src="6.mp4" controls></video></div>
+        <div class="grid-item"><video src="7.mp4" controls></video></div>
+        <div class="grid-item"><video src="8.mp4" controls></video></div>
+        <div class="grid-item"><video src="9.mp4" controls></video></div>
+    </div>
+</body>
+</html>
